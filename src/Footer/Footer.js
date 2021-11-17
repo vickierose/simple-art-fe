@@ -5,10 +5,10 @@ export default function Footer() {
         <footer className='footer_main'>
             <section className='footer_simple-art__text'>Ⓒ Simple Art, 2021<br/>
             All rights reserved</section>   
-            <section className='footer_links'>
-                <a href='#' className='footer_links__a_tag'>Terms</a>
-                <a href='#' className='footer_links__a_tag'>Privacy policy</a>
-                <a href='#' className='footer_links__a_tag'>Help&Support</a>
+            <section className='footer_nav'>
+                <a href='#' className='footer_link'>Terms</a>
+                <a href='#' className='footer_link'>Privacy policy</a>
+                <a href='#' className='footer_link'>Help&Support</a>
             </section>
         </footer>
     );
