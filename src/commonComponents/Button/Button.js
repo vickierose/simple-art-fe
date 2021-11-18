@@ -1,6 +1,8 @@
 import React from 'react'
 
-function Button(name='Apply') {
+import './styles.scss'
+
+function Button({name='Apply'}) {
     return (
         <button className="btn">{name}</button>
     )
