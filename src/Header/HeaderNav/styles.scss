@@ -1,0 +1,32 @@
+$a-color: #000000;
+
+.header-navigation {
+    display: flex;
+
+    ul{
+        display: flex;
+        list-style-type: none;
+    }
+
+    li{
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        min-width: 70px;
+    }
+
+    .navigation{
+        text-decoration: none;
+        color: $a-color;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+
+        &:hover {
+            font-weight: 600;
+        }
+    } 
+} 
