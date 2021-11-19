@@ -1,7 +1,7 @@
 import React from "react";
-
+import About from "./AboutPage/About";
 function App() {
-  return 
+  return <About/>
 }
 
 export default App;
