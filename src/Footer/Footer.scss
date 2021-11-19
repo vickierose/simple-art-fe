@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: $background-footer-main-color;
-    color: $text-footer-main-color;
+    color: $white;
     font-family: 'PoppinsRegular';
     font-size: 12px;
     line-height: 16px;
@@ -23,7 +23,7 @@
 
         .footer_link {
             text-decoration: none;
-            color: $text-footer-main-color;
+            color: $white;
             padding-right: 24px;
         }
     }
