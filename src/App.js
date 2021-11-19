@@ -1,7 +1,7 @@
 import React from "react";
-import About from "./AboutPage/About";
+import Footer from "./Footer/Footer";
 function App() {
-  return <About/>
+  return <div><Footer /></div>
 }
 
 export default App;
