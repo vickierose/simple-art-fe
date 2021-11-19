@@ -1,7 +1,11 @@
 import React from "react";
-import Footer from "./Footer/Footer";
+import Footer from "./Components/Footer/Footer";
+import About from "./Pages/AboutPage/About";
 function App() {
-  return <div><Footer /></div>
+  return <div> 
+            <About />
+            <Footer />
+          </div>
 }
 
 export default App;

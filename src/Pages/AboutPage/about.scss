@@ -1,0 +1,51 @@
+@import './../../commonStyles/font-family.scss';
+@import './../../commonStyles/reset.scss';
+
+.about-icons {
+    margin-right: 32px;
+}
+
+.about-icons:hover {
+    cursor: pointer;
+}
+
+.about_contact__map, .about_contact__social__address, .about_contact__social__phone, .about_contact__social__media {
+    display: flex;
+}
+
+.about {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'PoppinsRegular';
+    font-size: 14px;
+    line-height: 20px;
+    margin:20px 135px 40px 135px;
+
+    .about_text {
+        max-width: 579px;
+        padding-right: 5px;
+
+        .about_text__page-title {
+            font-size: 30px;
+            line-height: 36px;
+            font-family: 'Baloo2Bold';
+        }
+
+        .about_text__text-section {
+            margin-top: 20px;
+        }
+    }
+}
+
+.about_contact__social__address {
+    margin-top: 29px;        
+}
+
+.about_contact__social__phone{
+    margin-top: 16px;
+}
+
+.about_contact__social__media {
+    margin-top: 32px;
+}
