@@ -1,0 +1,35 @@
+@import '../commonStyles/reset.scss';
+@import '../commonStyles/variables.scss';
+@import '../commonStyles/font-family.scss';
+
+.footer_main {
+    display: flex;
+    max-width: 1440px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $main-theme-color;
+    color: $white;
+    font-family: 'PoppinsRegular';
+    font-size: 12px;
+    line-height: 16px;
+
+    .footer_simple-art__text {
+        text-align: center;
+        padding: 40px 0 40px 135px;
+    }
+
+    .footer_nav {
+        padding: 50px 111px 50px 0;
+
+        .footer_link {
+            text-decoration: none;
+            color: $white;
+            padding-right: 24px;
+        }
+    }
+}
+
+.footer_link:hover {
+    font-family: 'PoppinsBold';
+    cursor: pointer;
+} 
