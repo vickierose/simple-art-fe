@@ -1,14 +1,4 @@
-:root {
-    --background-footer-main-color: #59ABB0;
-    --text-footer-main-color: #FFFFFF;
-}
+$background-footer-main-color: #59ABB0;
+$text-footer-main-color: #FFFFFF;
 
-@font-face {
-    font-family: 'PoppinsRegular';
-    src: url('./../assets/fonts/Poppins/Poppins-Regular.ttf');
-} 
 
-@font-face {
-    font-family: 'PoppinsBold';
-    src: url('./../assets/fonts/Poppins/Poppins-Bold.ttf');
-}

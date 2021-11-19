@@ -1,13 +1,14 @@
 @import '../commonStyles/reset.scss';
 @import '../commonStyles/variables.scss';
+@import '../commonStyles/font-family.scss';
 
 .footer_main {
     display: flex;
     max-width: 1440px;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--background-footer-main-color);
-    color: var(--text-footer-main-color);
+    background-color: $background-footer-main-color;
+    color: $text-footer-main-color;
     font-family: 'PoppinsRegular';
     font-size: 12px;
     line-height: 16px;
@@ -22,13 +23,13 @@
 
         .footer_link {
             text-decoration: none;
-            color: var(--text-footer-main-color);
+            color: $text-footer-main-color;
             padding-right: 24px;
         }
     }
 }
 
-.footer_links__a_tag:hover {
+.footer_link:hover {
     font-family: 'PoppinsBold';
     cursor: pointer;
 } 
