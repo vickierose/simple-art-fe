@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "./Components/Footer/Footer";
-import About from "./Pages/AboutPage/About";
+import Footer from "./components/Footer/Footer";
+import About from "./pages/AboutPage/About";
 function App() {
   return <div> 
             <About />
