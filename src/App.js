@@ -1,12 +1,10 @@
 import React from "react";
 import Footer from "./Footer/Footer";
-import modalSubscribe from "./modalSubscribe/modalSubscribe";
+import ModalSubscribe from "./modalSubscribe/modalSubscribe";
 
 function App() {
   return <div>
-    <modalSubscribe 
-      isOpened={false}
-    />
+    <ModalSubscribe />
     <Footer />
     </div>
 }
