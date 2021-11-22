@@ -2,9 +2,9 @@ import React from 'react'
 
 import './styles.scss'
 
-function Button({name='Apply'}) {
+function Button({name='Apply', classN=''}) {
     return (
-        <button className="btn">{name}</button>
+        <button className={`btn ${classN}`}>{name}</button>
     )
 }
 

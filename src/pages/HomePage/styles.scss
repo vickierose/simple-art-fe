@@ -1,4 +1,6 @@
-$text-color: #000000;
+@import '../../commonStyles/reset.scss';
+@import '../../commonStyles/variables.scss';
+@import '../../commonStyles/font-family.scss';
 
 .heading {
     margin-top: 10px;
@@ -25,7 +27,7 @@ $text-color: #000000;
 .text {
     font-size: 16px;
     line-height: 25px;
-    color: $text-color;
+    color: $black;
 
     margin-top: 16px;
     margin-bottom: 16px;
@@ -45,4 +47,11 @@ $text-color: #000000;
     justify-content: space-between;
     padding: 0 100px;
     margin: 47px 0;
+}
+
+.list {
+    list-style-type: disc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
 }

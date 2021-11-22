@@ -8,10 +8,14 @@ import './styles.scss'
 
 function Header() {
     return (
-       <header>
-           <div><NavLink to="/"><img className="logo" src={Logo} alt="logo" /></NavLink></div>
-           <HeaderNav />
-       </header>
+        <header className="mainHeader">
+            <div>
+                <NavLink to="/">
+                    <img className="logo" src={Logo} alt="logo" />
+                </NavLink>
+            </div>
+            <HeaderNav />
+        </header>
     )
 }
 

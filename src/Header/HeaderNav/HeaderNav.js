@@ -7,20 +7,20 @@ import './styles.scss'
 function HeaderNav() {
     return (
         <nav className="header-navigation">
-            <ul>
-                <li>
+            <ul className="list">
+                <li className="item">
                     <NavLink className="navigation" to="/courses">Courses</NavLink>
                 </li>
-                <li>
+                <li className="item">
                     <NavLink className="navigation" to="/teachers">Teachers</NavLink>
                 </li>
-                <li>
+                <li className="item">
                     <NavLink className="navigation" to="/prices">Prices</NavLink>
                 </li>
-                <li>
+                <li className="item">
                     <NavLink className="navigation" to="/about">About us</NavLink>
                 </li>
-                <li>
+                <li className="item">
                     <Button name='Apply' />
                 </li>
             </ul>

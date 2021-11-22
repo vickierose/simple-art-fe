@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom"
 
 //componets
 import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
 import {
   HomePage,
   CoursesPage,
@@ -15,16 +16,16 @@ function App() {
   return (
     <>
       <Header />
-      <Routes>
+      <main>
+        <Routes>
           <Route path="/" index element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/teachers" element={<TeachersPage />} />
           <Route path="/prices" element={<PricesPage />} />
-      </Routes>
-      //footer link
+        </Routes>
+      </main>
+      <Footer />
     </>)
-
 }
-
 export default App;

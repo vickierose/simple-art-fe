@@ -1,23 +1,22 @@
-$a-color: #000000;
+@import '../../commonStyles/reset.scss';
+@import '../../commonStyles/variables.scss';
+@import '../../commonStyles/font-family.scss';
 
 .header-navigation {
-    display: flex;
-
-    ul{
+    .list{
         display: flex;
         list-style-type: none;
     }
 
-    li{
+    .item{
         margin-left: 20px;
         display: flex;
         align-items: center;
-        min-width: 70px;
     }
 
     .navigation{
         text-decoration: none;
-        color: $a-color;
+        color: $black;
 
         font-style: normal;
         font-weight: normal;
@@ -27,6 +26,7 @@ $a-color: #000000;
 
         &:hover {
             font-weight: 600;
+            cursor: pointer;
         }
     } 
 } 

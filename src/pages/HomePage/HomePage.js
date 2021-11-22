@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import './styles.scss'
-import Pic1 from '../../images/2.png'
-import Pic2 from '../../images/4.png'
+import Pic1 from '../../images/Img1.png'
+import Pic2 from '../../images/Img2.png'
 
 import Button from '../../commonComponents/Button/Button.js'
 
 function HomePage() {
     return (
-        <main>
+        <Fragment>
             <section className="content">
                 <article className="left">
                     <h1 className="heading">Desperate to learn drawing? We’ll teach you!</h1>
@@ -31,7 +31,7 @@ function HomePage() {
                             <p className="text">Augue ultricies non tristique malesuada justo neque mi, pellentesque lacus.</p>
                         </li>
                     </ul>
-                    <Button name='Apply now' className="apply-btn" />
+                    <Button name='Apply now' classN="apply-btn" />
                 </article>
                 <div className="right"><img className="image" src={Pic1} alt="paris-pic" /></div>
             </section>
@@ -41,10 +41,10 @@ function HomePage() {
                 <article className="right order1">
                     <h2 className="small-heading">Interested but currently have other plans?</h2>
                     <p className="text">Subscribe to our newsletter to stay tuned and get hottest updates and deals.</p>
-                    <Button name='Subscribe' className="subs-btn" />
+                    <Button name='Subscribe' classN="subs-btn" />
                 </article>
             </section>
-        </main>
+        </Fragment>
     )
 }
 

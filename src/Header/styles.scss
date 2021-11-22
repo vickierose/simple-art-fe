@@ -1,4 +1,8 @@
-header {  
+@import '../commonStyles/reset.scss';
+@import '../commonStyles/variables.scss';
+@import '../commonStyles/font-family.scss';
+
+.mainHeader {  
     padding: 10px 10vw;
     display: flex;
     align-items: center;
