@@ -2,8 +2,8 @@ $main-theme-color: #59ABB0;
 $white: #FFFFFF;
 $black: #000000;
 
-$button-color: #59ABB0;
-$button-text-color: #FFFFFF;
+$button-color: $main-theme-color;
+$button-text-color: $white;
 $button-hover-color: #60DFE8;
 $button-transparent-color: #1B6C71;
 $button-transparent-shadow-color: #14565A;
