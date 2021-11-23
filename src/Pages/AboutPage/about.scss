@@ -1,4 +1,4 @@
-.about_contact__map, .about_contact__social__address, .about_contact__social__phone, .about_contact__social__media {
+.about_display {
     display: flex;
 }
 
@@ -8,11 +8,11 @@
     justify-content: space-around;
     margin:20px 135px 40px 135px;
 
-    .about_text {
+    &_text {
         max-width: 579px;
         padding-right: 140px;
 
-        .about_text__text-section {
+        &__text-section {
             margin-top: 20px;
         }
     }
@@ -30,7 +30,7 @@
     margin-top: 32px;
 }
 
-.about-icons {
+.about-icon {
     margin-right: 32px;
     &:hover {
         cursor: pointer;
