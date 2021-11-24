@@ -6,11 +6,10 @@ import './App.scss';
 import {
   HomePage,
   CoursesPage,
-  About,
   TeachersPage,
   PricesPage,
   AboutPage
-} from "./Pages"
+} from "./pages"
 
 function App() {
   return (
