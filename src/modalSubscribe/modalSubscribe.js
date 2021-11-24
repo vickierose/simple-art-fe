@@ -25,7 +25,7 @@ const ModalSubscribe = ({visible, setVisible}) => {
                     <section className='modal__img'><img src={Modal_img} alt='modal img' /></section>
                 </section>
         </div>
-    )} else {return <div/>
+    )} else {return <></>
     }
 
 }

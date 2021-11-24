@@ -1,20 +1,31 @@
 import React from "react";
-import Footer from "./Footer/Footer";
-import ModalSubscribe from "./modalSubscribe/modalSubscribe";
-import {useState} from 'react';
+import { Route, Routes } from "react-router-dom"
+import Header from "./Header/Header";
+import Footer from "./Components/Footer/Footer";
+import './App.scss';
+import {
+  HomePage,
+  CoursesPage,
+  About,
+  TeachersPage,
+  PricesPage,
+  AboutPage
+} from "./Pages"
 
 function App() {
-  const [modalActive, setModalActive] = useState(false);
-
   return (
-    <div>
-    
-     
-    <button className="primary-button" onClick={() => setModalActive(true)}>Subscribe</button>
-    <ModalSubscribe visible={modalActive} setVisible={setModalActive}/> 
-    <Footer />
-    </div>
-    ) 
+    <>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" index element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/courses" element={<CoursesPage />} />
+          <Route path="/teachers" element={<TeachersPage />} />
+          <Route path="/prices" element={<PricesPage />} />
+        </Routes>
+      </main>
+      <Footer />
+    </>)
 }
-
 export default App;
