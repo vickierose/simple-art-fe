@@ -14,7 +14,7 @@ function Header() {
                     <img className="logo" src={Logo} alt="logo" />
                 </NavLink>
             </div>
-            <HeaderNav />
+            {<HeaderNav />}
         </header>
     )
 }

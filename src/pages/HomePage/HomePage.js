@@ -5,8 +5,10 @@ import Pic1 from '../../images/Img1.png'
 import Pic2 from '../../images/Img2.png'
 
 import Button from '../../commonComponents/Button/Button.js'
+import { useNavigate } from 'react-router'
 
 function HomePage() {
+    let navigate = useNavigate();
     return (
         <Fragment>
             <section className="content">
@@ -31,7 +33,7 @@ function HomePage() {
                             <p className="text">Augue ultricies non tristique malesuada justo neque mi, pellentesque lacus.</p>
                         </li>
                     </ul>
-                    <Button name='Apply now' classN="apply-btn" />
+                    <Button name='Apply now' classN="apply-btn" onClick={() => navigate("/apply")} />
                 </article>
                 <div className="right"><img className="image" src={Pic1} alt="paris-pic" /></div>
             </section>

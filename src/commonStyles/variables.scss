@@ -4,6 +4,6 @@ $black: #000000;
 
 $button-color: $main-theme-color;
 $button-text-color: $white;
-$button-hover-color: #60DFE8;
-$button-transparent-color: #1B6C71;
+$button-hover-color: #1B6C71;
+$button-transparent-color: $button-hover-color;
 $button-transparent-shadow-color: #14565A;

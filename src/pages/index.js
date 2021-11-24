@@ -3,11 +3,13 @@ import CoursesPage from "./CoursesPage/CoursesPage";
 import AboutPage from "./AboutPage/AboutPage";
 import PricesPage from "./PricesPage/PricesPage";
 import TeachersPage from "./TeachersPage/TeachersPage";
+import ApplyPage from "./ApplyPage/ApplyPage";
 
 export {
     HomePage,
     CoursesPage,
     AboutPage,
     PricesPage,
-    TeachersPage
+    TeachersPage,
+    ApplyPage
 }
