@@ -8,7 +8,6 @@ import Button from '../../commonComponents/Button/Button.js'
 
 function HomePage(showModal) {
     const [modalActive, setModalActive] = useState(false);
-    let a = 2;
     return (
         <Fragment>
             <section className="content">
