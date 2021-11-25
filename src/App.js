@@ -9,7 +9,7 @@ import {
   TeachersPage,
   PricesPage,
   AboutPage
-} from "./pages"
+} from "./Pages"
 
 function App() {
   return (

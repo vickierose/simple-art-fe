@@ -1,12 +1,12 @@
 @import '../commonStyles/font-family.scss';
 @import '../commonStyles/base-button.scss';
 @import '../commonStyles/variables.scss';
+@import '../commonStyles/typography.scss';
 
-.header_h2_regular {
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 36px;
+.text-center {
+    text-align: center;
 }
+
 .modal_bg{
     position: fixed;
     top: 0;
@@ -17,6 +17,7 @@
     background: #000;
     opacity: 0.5;
 }
+
 .modal_main {
     background-color: $white;
     position: fixed;
@@ -28,33 +29,35 @@
     border-radius: 15px;
     z-index: 20;
 
-    .modal__img{
+    &__img{
         & img {
         border-radius: 0px 15px 15px 0px 
+        }
     }
-}
 }
 
 .modal_body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     width: 776px;
-    height: 512px;
-    padding: 32px;
-    .modal__input-field{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        top: 112px;
-
-        .modal__text{
-            position: relative;
-            top: 180px;
-        }
-    }
-    .modal__close {
+    height: 444px;
+    padding: 32px 32px 36px 32px;
+    &__close {
+        width: 16px;
+        height: 16px;
         &:hover{
             cursor: pointer;
         }
+    }
+    &__input-field {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__subtext {
+        text-align: center;
+        margin-top: 182px;
     }
 }
 
@@ -67,6 +70,7 @@
         border: 1px solid $input-border-default;
         box-sizing: border-box;
         margin-right: 24px;
+        padding: 10px 0 10px 16px;
         &::-webkit-input-placeholder {color:#93A3A3;}
         &::-moz-placeholder          {color:#93A3A3;}
         &:-moz-placeholder           {color:#93A3A3;}
