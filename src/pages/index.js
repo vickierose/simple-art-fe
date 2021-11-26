@@ -1,15 +1,15 @@
 import HomePage from "./HomePage/HomePage";
 import CoursesPage from "./CoursesPage/CoursesPage";
-import AboutPage from "./AboutPage/AboutPage";
 import PricesPage from "./PricesPage/PricesPage";
 import TeachersPage from "./TeachersPage/TeachersPage";
 import ApplyPage from "./ApplyPage/ApplyPage";
+import About from "./AboutPage/About";
 
 export {
     HomePage,
     CoursesPage,
-    AboutPage,
     PricesPage,
     TeachersPage,
-    ApplyPage
+    ApplyPage,
+    About
 }

@@ -1,0 +1,123 @@
+@import '../../../commonStyles/variables.scss';
+
+@import '../../../commonStyles/typography.scss';
+
+.custom-select {
+	position: relative;
+
+	&[open] {
+		z-index: 1;
+	}
+
+	&[open] .radios:before {
+		content: '';
+		display: block;
+		width: 100vw;
+		height: 100vh;
+		background: transparent;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+}
+
+.radios {
+	padding: 1rem;
+	cursor: pointer;
+	list-style: none;
+
+    width: 304px;
+    height: 40px;
+
+    padding: 10px;
+
+    border: 1px solid $input-border;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+	//do not touch float!!!
+	&:after {
+		content: url('../../../assets/Icons/Vector.png');
+		display: inline-block;
+		float: right;
+		width: .5rem;
+		height: .5rem;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&::-webkit-details-marker {
+		display: none;
+	}
+
+	&:hover {
+		border-color: $inputs-hover;
+	}
+}
+
+.container-list {
+	width: 100%;
+	position: absolute;
+	top: 90%;
+	left: 0;
+	border-radius: 10px;
+    border: 1px solid $input-border;
+	background: $white;
+	margin: 0;
+	padding: 10px 0;
+	padding-right: 2px;
+}
+
+.drop-list {
+	box-sizing: border-box;
+	max-height: 160px;
+	overflow-y: auto;
+}
+
+.drop-item {
+	margin: 0;
+	
+
+	&:last-child {
+		border-bottom: none;
+	}
+
+	&:hover {
+		background-color: $dropdown-select-hover;
+	}
+}
+
+/* FAKE SELECT */
+.radios {
+	counter-reset: radios;
+}
+
+input[type=radio] {
+	counter-increment: radios;
+	appearance: none;
+	display: none;
+}
+
+input[type=radio]:checked {
+	display: inline;
+}
+
+input[type=radio]:after {
+	content: attr(title);
+	display: inline;
+	font-size: 1rem;
+
+    @include general_text;
+}
+
+.drop-list {
+	counter-reset: labels;
+}
+
+.drop-item-text {
+	display: block;
+	cursor: pointer;
+	padding: 10px 15px;
+}

@@ -7,3 +7,11 @@ $button-text-color: $white;
 $button-hover-color: #1B6C71;
 $button-transparent-color: $button-hover-color;
 $button-transparent-shadow-color: #14565A;
+$button-disabled: #C2D2D2;
+
+$input-border: $button-disabled;
+$dropdown-select-hover: #F6F6F0;
+
+$inputs-hover: $button-hover-color;
+
+$scrollbar: $button-disabled;

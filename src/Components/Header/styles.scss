@@ -1,0 +1,36 @@
+@import '../../commonStyles/variables.scss';
+
+@import '../../commonStyles/typography.scss';
+
+.mainHeader {  
+    padding: 30px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 145px;
+    height: 60px;
+}
+
+.back-image {
+    padding: 3px 16px 0 0;
+}
+
+.back-button {
+    display: flex;
+    border: none;
+    background: $white;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.text-back {
+    &:hover {
+        @include misc_button1_bold;
+    }
+}

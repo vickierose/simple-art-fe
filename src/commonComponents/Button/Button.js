@@ -2,7 +2,7 @@ import React from 'react'
 
 import './styles.scss'
 
-function Button({ name = 'Apply', classN = '', onClick }) {
+function Button({ name = 'Apply', classN = '', onClick, disabled }) {
     // function Redirect() {
     //     console.log('qqq');
     //     let navigate = useNavigate();
@@ -11,7 +11,7 @@ function Button({ name = 'Apply', classN = '', onClick }) {
     //     }, []);
     // }
     return (
-        <button onClick={onClick} className={`btn ${classN}`}>{name}</button>
+        <button disabled={disabled} onClick={onClick} className={`btn misc_button1_bold ${classN}`}>{name}</button>
     )
 }
 

@@ -1,0 +1,36 @@
+@import '../../commonStyles/variables.scss';
+
+.form-content {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 7px 0;
+}
+
+.space {
+    padding-bottom: 35px;
+}
+
+.inputs {
+    width: 304px;
+    height: 40px;
+
+    padding: 0 16px 0 16px;
+
+    border: 1px solid $input-border;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    outline:none;
+
+    &:hover{
+		border-color: $inputs-hover;
+	}
+}
+
+.selector {
+    appearance: none;
+    overflow: hidden;
+    background: url('../../assets/Icons/Vector.png') no-repeat right;
+    background-position-x: 95%;
+}
