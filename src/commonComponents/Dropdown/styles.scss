@@ -1,6 +1,6 @@
-@import '../../../commonStyles/variables.scss';
+@import '../../commonStyles/variables.scss';
 
-@import '../../../commonStyles/typography.scss';
+@import '../../commonStyles/typography.scss';
 
 .custom-select {
 	position: relative;
@@ -35,10 +35,10 @@
     box-sizing: border-box;
     border-radius: 10px;
 
-	//do not touch float!!!
 	&:after {
-		content: url('../../../assets/Icons/Vector.png');
+		content: url('../../assets/Icons/Vector.png');
 		display: inline-block;
+		//do not touch float!!!
 		float: right;
 		width: .5rem;
 		height: .5rem;
@@ -53,7 +53,7 @@
 	}
 
 	&:hover {
-		border-color: $inputs-hover;
+		border-color: $input-hover;
 	}
 }
 
@@ -107,7 +107,6 @@ input[type=radio]:checked {
 input[type=radio]:after {
 	content: attr(title);
 	display: inline;
-	font-size: 1rem;
 
     @include general_text;
 }
@@ -120,4 +119,27 @@ input[type=radio]:after {
 	display: block;
 	cursor: pointer;
 	padding: 10px 15px;
+}
+
+//For disabled select
+.disabled-selector {
+	width: 304px;
+    height: 40px;
+
+    padding: 0 16px 0 16px;
+
+    border: 1px solid $input-border;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    outline:none;
+
+    appearance: none;
+    overflow: hidden;
+    background: url('../../assets/Icons/Vector.png') no-repeat right;
+    background-position-x: 98%;
+
+	&:hover {
+		border-color: $input-border;
+	}
 }

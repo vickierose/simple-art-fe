@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react'
 
 import ComfirmationPage from '../../Components/ComfirmationPage/ComfirmationPage'
 import Button from '../../commonComponents/Button/Button'
-import Dropdown from '../../commonComponents/Button/Dropdown/Dropdown'
+import Dropdown from '../../commonComponents/Dropdown/Dropdown'
 import Pic3 from '../../assets/images/Img3.png'
 
 import './styles.scss'
@@ -17,7 +17,6 @@ function ApplyPage() {
     const [phone, setPhone] = useState('');
 
     function setDataToState(e) {
-        console.log(e)
         switch (e.target.name) {
             case 'course':
                 setCourse(e.target.value);
@@ -100,25 +99,11 @@ function ApplyPage() {
                             <section className="space">
                                 <section className="form-content">
                                     <p className="header_h5_medium text">Course</p>
-                                    {/* <select name="course" className="general_text inputs selector" onChange={setDataToState}>
-                                        <option value="" hidden>Select...</option>
-                                        <option value="grapefruit">Grapefruit</option>
-                                        <option value="lime">Lime</option>
-                                        <option value="coconut">Coconut</option>
-                                        <option value="mango">Mango</option>
-                                    </select> */}
-                                    <Dropdown name="course" value={arrMain} onChange={(e) => setCourse(e.target.value)} />
+                                    <Dropdown name="course" value={arrMain} onChange={(id) => setCourse(id)} />
                                 </section>
                                 <section className="form-content">
                                     <p className="header_h5_medium text">Group</p>
-                                    {/* <select disabled={!course} name="group" className="general_text inputs selector" onChange={setDataToState}>
-                                        <option value="" hidden>Select...</option>
-                                        <option value="grapefruit">Grapefruit</option>
-                                        <option value="lime">Lime</option>
-                                        <option value="coconut">Coconut</option>
-                                        <option value="mango">Mango</option>
-                                    </select> */}
-                                    <Dropdown disabled={!course} name="group" value={arrMain} onChange={(e) => setGroup(e.target.value)} />
+                                    <Dropdown disabled={!course} name="group" value={arrMain} onChange={(id) => setGroup(id)} />
                                 </section>
                             </section>
                             <section className="space">
@@ -141,7 +126,6 @@ function ApplyPage() {
                     <div className="right"><img className="image" src={Pic3} alt="palette-pic" /></div>
                 </section>
             }
-
         </Fragment>
     )
 }

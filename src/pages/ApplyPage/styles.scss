@@ -24,13 +24,6 @@
     outline:none;
 
     &:hover{
-		border-color: $inputs-hover;
+		border-color: $input-hover;
 	}
-}
-
-.selector {
-    appearance: none;
-    overflow: hidden;
-    background: url('../../assets/Icons/Vector.png') no-repeat right;
-    background-position-x: 95%;
 }
