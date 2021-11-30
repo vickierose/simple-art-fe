@@ -1,15 +1,15 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom"
 import Header from "./Header/Header";
-import Footer from "./components/Footer/Footer";
+import Footer from "./Components/Footer/Footer";
 import './App.scss';
 import {
   HomePage,
   CoursesPage,
-  About,
   TeachersPage,
-  PricesPage
-} from "./pages"
+  PricesPage,
+  AboutPage
+} from "./Pages"
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" index element={<HomePage />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/teachers" element={<TeachersPage />} />
           <Route path="/prices" element={<PricesPage />} />

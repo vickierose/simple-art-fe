@@ -1,9 +1,14 @@
 $main-theme-color: #59ABB0;
 $white: #FFFFFF;
+$button-primary-hover: #1B6C71;
+$button-primary-active: #14565A;
+$button-primary-disable:  #C2D2D2; 
+$input-border-default: #C2D2D2;
 $black: #000000;
-
 $button-color: $main-theme-color;
 $button-text-color: $white;
 $button-hover-color: #60DFE8;
 $button-transparent-color: #1B6C71;
 $button-transparent-shadow-color: #14565A;
+$input-border-hover: #88CCD0;
+$input-border-focus: #1B6C71;

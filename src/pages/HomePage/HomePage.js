@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react'
-
+import React, { Fragment, useState } from 'react'
 import './styles.scss'
 import Pic1 from '../../images/Img1.png'
 import Pic2 from '../../images/Img2.png'
-
+import ModalSubscribe from '../../modalSubscribe/modalSubscribe'
 import Button from '../../commonComponents/Button/Button.js'
 
-function HomePage() {
+function HomePage(showModal) {
+    const [visible, setVisible] = useState(false);
     return (
         <Fragment>
             <section className="content">
@@ -41,8 +41,10 @@ function HomePage() {
                 <article className="right order1">
                     <h2 className="small-heading">Interested but currently have other plans?</h2>
                     <p className="text">Subscribe to our newsletter to stay tuned and get hottest updates and deals.</p>
-                    <Button name='Subscribe' classN="subs-btn" />
+                    <Button onClick={() => setVisible(true)} name='Subscribe' classN="subs-btn"/>
+                    <ModalSubscribe visible={visible} setVisible={setVisible}/>
                 </article>
+                
             </section>
         </Fragment>
     )
