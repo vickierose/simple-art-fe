@@ -12,8 +12,8 @@ import {
   CoursesPage,
   About,
   TeachersPage,
-  PricesPage,
-  ApplyPage
+  ApplyPage,
+  SingleCourse
 } from "./pages"
 
 function App() {
@@ -24,10 +24,12 @@ function App() {
         <Routes>
           <Route path="/" index element={<HomePage />} />
           <Route path="/about" element={<About />} />
-          <Route path="/courses" element={<CoursesPage />} />
           <Route path="/teachers" element={<TeachersPage />} />
-          <Route path="/prices" element={<PricesPage />} />
           <Route path="/apply" element={<ApplyPage />} />
+
+          <Route path="/courses" element={<CoursesPage />} />
+          <Route path="/courses/:courseId" element={<SingleCourse />} />
+          
         </Routes>
       </main>
       <Footer />

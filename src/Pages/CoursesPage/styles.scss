@@ -1,0 +1,67 @@
+@import '../../commonStyles/variables.scss';
+
+.all-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course-image {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card {
+    margin: 30px;
+
+    width: 280px;
+    height: 372px;
+
+    background: $white;
+    box-shadow: 0px 0px 4px $card-shadow;
+    border-radius: 15px;
+}
+
+.card-content {
+    padding: 10px 12px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-info-all {
+    margin: 20px 0;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+
+    text-align: end;
+    margin: 10px 0;
+}
+
+.text-height {
+    height: 48px;
+}
+
+.clip {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.duration-center {
+    align-self: center;
+}
+
+.card-text {
+    margin: 10px 0 10px 0;
+}
+
+.price {
+    color: $card-price-color;
+}

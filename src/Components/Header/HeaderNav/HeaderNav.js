@@ -17,9 +17,6 @@ function HeaderNav() {
                     <NavLink className="navigation misc_button2_regular" to="/teachers">Teachers</NavLink>
                 </li>
                 <li className="item">
-                    <NavLink className="navigation misc_button2_regular" to="/prices">Prices</NavLink>
-                </li>
-                <li className="item">
                     <NavLink className="navigation misc_button2_regular" to="/about">About us</NavLink>
                 </li>
                 <li className="item">

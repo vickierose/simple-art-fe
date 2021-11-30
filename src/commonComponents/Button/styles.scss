@@ -34,6 +34,11 @@
     }
 }
 
+.course-apply {
+    height: 40px;
+    width: 256px;
+}
+
 .disabled {
     background: $button-disabled;
     &:hover {
