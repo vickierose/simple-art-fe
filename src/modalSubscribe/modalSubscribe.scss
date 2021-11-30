@@ -3,6 +3,13 @@
 @import '../commonStyles/variables.scss';
 @import '../commonStyles/typography.scss';
 
+input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+}
+
 .text-center {
     text-align: center;
 }
@@ -75,5 +82,14 @@
         &::-moz-placeholder          {color:#93A3A3;}
         &:-moz-placeholder           {color:#93A3A3;}
         &:-ms-input-placeholder      {color:#93A3A3;}
+
+        &:hover {
+            border-color: $input-border-hover;
+        }
+
+        &:focus {
+            border: 1px solid $input-border-focus;
+        }
     }
 }
+

@@ -1,5 +1,4 @@
-import React from "react";
-import * as axios from 'axios';//     
+import * as axios from 'axios';
 
 export default function sendEmail(inputValue) {
     return axios.post('http://localhost:5000/form/subscribe', inputValue)
@@ -9,4 +8,3 @@ export default function sendEmail(inputValue) {
 }
 
 
-//http://localhost:5000/form/subscribe
