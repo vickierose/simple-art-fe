@@ -11,7 +11,7 @@ import {
   AboutPage,
   TeachersPage,
   PricesPage
-} from "./pages"
+} from "./Pages"
 
 function App() {
   return (
