@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react'
 
-import ComfirmationPage from '../../Components/ComfirmationPage/ComfirmationPage'
+import ConfirmationPage from '../../components/ConfirmationPage/ConfirmationPage'
 import Button from '../../commonComponents/Button/Button'
 import Dropdown from '../../commonComponents/Dropdown/Dropdown'
 import Pic3 from '../../assets/images/Img3.png'
@@ -89,7 +89,7 @@ function ApplyPage() {
 
     return (
         <Fragment>
-            {confirm ? <ComfirmationPage /> :
+            {confirm ? <ConfirmationPage /> :
                 <section className="content">
                     <section className="left">
                         <h1 className="header_h1_bold">Apply to desired course right away!</h1>
@@ -98,26 +98,29 @@ function ApplyPage() {
                         <form>
                             <section className="space">
                                 <section className="form-content">
-                                    <p className="header_h5_medium text">Course</p>
+                                    <h5 className="header_h5_medium text">Course</h5>
                                     <Dropdown name="course" value={arrMain} onChange={(id) => setCourse(id)} />
                                 </section>
                                 <section className="form-content">
-                                    <p className="header_h5_medium text">Group</p>
+                                    <h5 className="header_h5_medium text">Group</h5>
                                     <Dropdown disabled={!course} name="group" value={arrMain} onChange={(id) => setGroup(id)} />
                                 </section>
                             </section>
                             <section className="space">
                                 <section className="form-content">
-                                    <p className="header_h5_medium text">Full name</p>
-                                    <input className="general_text inputs" minLength='3' name="fullName" type='text' onChange={setDataToState}></input>
+                                    <h5 className="header_h5_medium text">Full name</h5>
+                                    <input className="general_text inputs" minLength='3'
+                                    name="fullName" type='text' onChange={setDataToState} />
                                 </section>
                                 <section className="form-content">
-                                    <p className="header_h5_medium text">E-mail</p>
-                                    <input className="general_text inputs" placeholder="email@email.com" value={email} name="email" type='text' onChange={setDataToState}></input>
+                                    <h5 className="header_h5_medium text">E-mail</h5>
+                                    <input className="general_text inputs" placeholder="email@email.com"
+                                        value={email} name="email" type='text' onChange={setDataToState} />
                                 </section>
                                 <section className="form-content">
-                                    <p className="header_h5_medium text">Phone number</p>
-                                    <input className="general_text inputs" name="phone" value={phone} placeholder="(___)___-__-__" type="text" onChange={setDataToState}></input>
+                                    <h5 className="header_h5_medium text">Phone number</h5>
+                                    <input className="general_text inputs" name="phone" value={phone}
+                                        placeholder="(___)___-__-__" type="text" onChange={setDataToState} />
                                 </section>
                             </section>
                             <Button name='Apply' onClick={submit} classN={checkValid() && "disabled"} disabled={checkValid()} />

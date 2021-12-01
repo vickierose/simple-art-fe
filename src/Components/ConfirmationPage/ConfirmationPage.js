@@ -6,7 +6,7 @@ import Checkmark from '../../assets/images/checkmark.png'
 
 import './styles.scss'
 
-function ComfirmationPage() {
+function ConfirmationPage() {
     let navigate = useNavigate();
     return (
         <Fragment>
@@ -24,4 +24,4 @@ function ComfirmationPage() {
     )
 }
 
-export default ComfirmationPage
+export default ConfirmationPage

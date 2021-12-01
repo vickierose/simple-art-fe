@@ -11,12 +11,12 @@ import './styles.scss'
 function Header() {
     const location = useLocation();
     const navigate = useNavigate();
-    const [isApllyPage, setIsApllyPage] = useState(false);
+    const [isApplyPage, setIsApplyPage] = useState(false);
 
     useEffect(() => {
         if (location.pathname === '/apply') {
-            setIsApllyPage(true);
-        } else setIsApllyPage(false);
+            setIsApplyPage(true);
+        } else setIsApplyPage(false);
     }, [location]);
 
     return (
@@ -26,7 +26,7 @@ function Header() {
                     <img className="logo" src={Logo} alt="logo" />
                 </NavLink>
             </div>
-            {isApllyPage ?
+            {isApplyPage ?
                 <button className="back-button" onClick={() => navigate(-1)} to='/'>
                     <img className="back-image" src={Back} alt="back-icon" /><p className="header_h5_medium text-back">Back</p>
                 </button>

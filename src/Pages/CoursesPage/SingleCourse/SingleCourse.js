@@ -12,7 +12,6 @@ import { courseData } from '../../../assets/courseData'
 function SingleCourse() {
     const { courseId } = useParams();
     const singleCourse = courseData.find(el => el.id === courseId);
-    console.log(singleCourse);
     return (
         <>
             <section className="content">

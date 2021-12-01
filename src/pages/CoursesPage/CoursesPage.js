@@ -17,7 +17,6 @@ function CoursesPage() {
 
             <section className="all-cards">
                 {courseData.map((el) => {
-                    //console.log(el);
                     return <section key={el.id} className="card">
                         <div><img className="course-image" src={Course_img} alt="course_picture" /></div>
                         <section className="card-content">
@@ -32,7 +31,10 @@ function CoursesPage() {
                                 </section>
                                 <section className="card-info">
                                     <p className="general_subtext_light duration-center">Duration</p>
-                                    <p className="general_subtext_light"><span>{el.duration}</span> <br /> <span>{el.periodicity}</span></p>
+                                    <p className="general_subtext_light">
+                                        <span>{el.duration}</span>
+                                        <br />
+                                        <span>{el.periodicity}</span></p>
                                 </section>
                             </section>
                             <section className="card-text text-height">
