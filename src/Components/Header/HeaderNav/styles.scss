@@ -1,6 +1,4 @@
-@import '../../commonStyles/reset.scss';
-@import '../../commonStyles/variables.scss';
-@import '../../commonStyles/font-family.scss';
+@import '../../../commonStyles/variables.scss';
 
 .header-navigation {
     .list{
@@ -17,12 +15,6 @@
     .navigation{
         text-decoration: none;
         color: $black;
-
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        text-align: center;
 
         &:hover {
             font-weight: 600;

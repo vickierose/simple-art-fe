@@ -6,9 +6,8 @@ import Facebook from './../../assets/Icons/facebook.png';
 import Instageam from './../../assets/Icons/instagram.png';
 import Twitter from './../../assets/Icons/twitter.png';
 import './about.scss';
- 
 
-function AboutPage() {
+export default function AboutPage() {
     return (
         <main className='about'>
             <section className='about_text'>
@@ -40,5 +39,3 @@ function AboutPage() {
         </main>
     );
 }
-
-export default AboutPage
