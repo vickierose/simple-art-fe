@@ -52,6 +52,15 @@
     line-height: 20px;
 }
 
+@mixin general_text {
+    font: {
+        family: 'PoppinsRegular';
+        size: 14px;
+        weight: 400;
+    };
+    line-height: 20px;
+}
+
 .general_subtext {
     font: {
         family: 'PoppinsRegular';
@@ -81,6 +90,15 @@
 }
 
 .misc_button1_bold {
+    font: {
+        family: 'Baloo2Regular';
+        size: 14px;
+        weight: 700;
+    };
+    line-height: 22px;
+}
+
+@mixin misc_button1_bold {
     font: {
         family: 'Baloo2Regular';
         size: 14px;

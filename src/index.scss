@@ -2,3 +2,18 @@
 @import './commonStyles/variables.scss';
 @import './commonStyles/base-style.scss';
 @import './commonStyles/typography.scss';
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: $scrollbar; 
+    border-radius: 10px;
+}

@@ -1,0 +1,20 @@
+@import '../../../commonStyles/variables.scss';
+
+.price-block {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 25px 0;
+}
+
+.width-content {
+    max-width: 50%;
+}
+
+.price-title {
+    color: $course-price-color;
+}
+
+.course-describe-list {
+    list-style: inside;
+}

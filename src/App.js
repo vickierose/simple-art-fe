@@ -1,27 +1,34 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom"
-import Header from "./Header/Header";
-import Footer from "./Components/Footer/Footer";
-import './App.scss';
+
+import './App.scss'
+
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer"
+
 import {
   HomePage,
   CoursesPage,
   TeachersPage,
-  PricesPage,
+  ApplyPage,
+  SingleCourse,
   AboutPage
-} from "./Pages"
+} from "./pages/index"
 
 function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className="main-content">
         <Routes>
           <Route path="/" index element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/courses" element={<CoursesPage />} />
           <Route path="/teachers" element={<TeachersPage />} />
-          <Route path="/prices" element={<PricesPage />} />
+          <Route path="/apply" element={<ApplyPage />} />
+
+          <Route path="/courses" element={<CoursesPage />} />
+          <Route path="/courses/:courseId" element={<SingleCourse />} />
+          
         </Routes>
       </main>
       <Footer />
