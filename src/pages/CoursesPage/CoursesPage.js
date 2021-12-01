@@ -34,7 +34,8 @@ function CoursesPage() {
                                     <p className="general_subtext_light">
                                         <span>{el.duration}</span>
                                         <br />
-                                        <span>{el.periodicity}</span></p>
+                                        <span>{el.periodicity}</span>
+                                    </p>
                                 </section>
                             </section>
                             <section className="card-text text-height">

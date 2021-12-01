@@ -109,18 +109,35 @@ function ApplyPage() {
                             <section className="space">
                                 <section className="form-content">
                                     <h5 className="header_h5_medium text">Full name</h5>
-                                    <input className="general_text inputs" minLength='3'
-                                    name="fullName" type='text' onChange={setDataToState} />
+                                    <input
+                                        className="general_text inputs"
+                                        minLength='3'
+                                        name="fullName"
+                                        type='text'
+                                        onChange={setDataToState}
+                                    />
                                 </section>
                                 <section className="form-content">
                                     <h5 className="header_h5_medium text">E-mail</h5>
-                                    <input className="general_text inputs" placeholder="email@email.com"
-                                        value={email} name="email" type='text' onChange={setDataToState} />
+                                    <input
+                                        className="general_text inputs"
+                                        placeholder="email@email.com"
+                                        value={email}
+                                        name="email"
+                                        type='text'
+                                        onChange={setDataToState}
+                                    />
                                 </section>
                                 <section className="form-content">
                                     <h5 className="header_h5_medium text">Phone number</h5>
-                                    <input className="general_text inputs" name="phone" value={phone}
-                                        placeholder="(___)___-__-__" type="text" onChange={setDataToState} />
+                                    <input
+                                        className="general_text inputs"
+                                        name="phone"
+                                        value={phone}
+                                        placeholder="(___)___-__-__"
+                                        type="text"
+                                        onChange={setDataToState}
+                                    />
                                 </section>
                             </section>
                             <Button name='Apply' onClick={submit} classN={checkValid() && "disabled"} disabled={checkValid()} />
