@@ -14,11 +14,18 @@ function TeachersPage({ teacherData, fetchTeachers }) {
 
     return (
         <section className="teachersPage-wrap">
-            <p className="header_h1_bold">Meet our great team!</p>
+            <h1 className="header_h1_bold">Meet our great team!</h1>
             <section className="teachersList">
         {
             teacherData.teachers
-                .map(teach => <Teacher fname={teach.first_name} lname={teach.last_name} photo={teach.photo} coursesList={teach.courses} education={teach.education} about={teach.about}></Teacher>)
+                .map(teach => 
+                    <Teacher 
+                        fname={teach.first_name} 
+                        lname={teach.last_name} 
+                        photo={teach.photo} 
+                        coursesList={teach.courses} 
+                        education={teach.education} 
+                        about={teach.about}/>)
         }
         </section>
         </section>

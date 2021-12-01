@@ -6,7 +6,7 @@ const initialState = {
     error: ''
 }
 
-const reducer = (state = initialState, action) => {
+const teacherReducer = (state = initialState, action) => {
     switch (action.type) {
         case FETCH_TEACHERS_REQUEST:
             return {
@@ -29,4 +29,4 @@ const reducer = (state = initialState, action) => {
     }
 }
 
-export default reducer
+export default teacherReducer
