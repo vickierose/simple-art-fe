@@ -7,9 +7,9 @@ import Instageam from './../../assets/Icons/instagram.png';
 import Twitter from './../../assets/Icons/twitter.png';
 import './about.scss';
 
-export default function About() {
+export default function AboutPage() {
     return (
-        <section className='about'>
+        <main className='about'>
             <section className='about_text'>
                 <h1 className='header_h1_bold'>Who we are?</h1>
                 <section className='about_text__text-section'>
@@ -36,6 +36,6 @@ export default function About() {
                     </section>
                     </section>
             </section>
-        </section>
+        </main>
     );
 }

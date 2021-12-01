@@ -1,5 +1,4 @@
 import React from 'react'
-
 import './styles.scss'
 
 function Button({ name = 'Apply', classN = '', onClick, disabled }) {

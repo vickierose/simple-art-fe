@@ -1,0 +1,24 @@
+@import './variables.scss';
+
+.primary-button, .primary-button-hover, .primary-button-active, .primary-button-disable {
+        width: 152px;
+        height: 40px;
+        border-radius: 10px;
+}
+
+.primary-button {
+    background-color: $main-theme-color;
+}
+
+.primary-button-hover {
+    background-color: $button-primary-hover;
+}
+
+.primary-button-active {
+    background-color: $button-primary-active;
+}
+
+.primary-button-disable {
+    background-color: $button-primary-disable;
+}
+

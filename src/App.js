@@ -10,10 +10,10 @@ import Footer from "./components/Footer/Footer"
 import {
   HomePage,
   CoursesPage,
-  About,
   TeachersPage,
   ApplyPage,
-  SingleCourse
+  SingleCourse,
+  AboutPage
 } from "./pages"
 
 function App() {
@@ -23,7 +23,8 @@ function App() {
       <main className="main-content">
         <Routes>
           <Route path="/" index element={<HomePage />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/courses" element={<CoursesPage />} />
           <Route path="/teachers" element={<TeachersPage />} />
           <Route path="/apply" element={<ApplyPage />} />
 

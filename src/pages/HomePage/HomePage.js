@@ -1,14 +1,18 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import { useNavigate } from 'react-router'
 
 import './styles.scss'
+
 import Pic1 from '../../assets/images/Img1.png'
 import Pic2 from '../../assets/images/Img2.png'
-
+import ModalSubscribe from '../../modalSubscribe/modalSubscribe'
 import Button from '../../commonComponents/Button/Button.js'
 
-function HomePage() {
+function HomePage(showModal) {
     let navigate = useNavigate();
+
+    const [visible, setVisible] = useState(false);
+    
     return (
         <Fragment>
             <section className="content">
@@ -41,10 +45,12 @@ function HomePage() {
             <section className="content">
                 <div className="left"><img className="image" src={Pic2} alt="old-letter-pic" /></div>
                 <article className="right order1">
-                    <h2 className="header_h2_regular">Interested but currently have other plans?</h2>
-                    <p className="general_text text">Subscribe to our newsletter to stay tuned and get hottest updates and deals.</p>
-                    <Button name='Subscribe' classN="subs-btn" />
+                    <h2 className="small-heading">Interested but currently have other plans?</h2>
+                    <p className="text">Subscribe to our newsletter to stay tuned and get hottest updates and deals.</p>
+                    <Button onClick={() => setVisible(true)} name='Subscribe' classN="subs-btn"/>
+                    <ModalSubscribe visible={visible} setVisible={setVisible}/>
                 </article>
+                
             </section>
         </Fragment>
     )
