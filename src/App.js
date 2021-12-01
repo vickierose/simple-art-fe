@@ -1,5 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom"
+import { Provider } from 'react-redux'
+import store from './redux/store'
 
 import './App.scss'
 
@@ -17,21 +19,23 @@ import {
 
 function App() {
   return (
-    <>
-      <Header />
-      <main className="main-content">
-        <Routes>
-          <Route path="/" index element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/teachers" element={<TeachersPage />} />
-          <Route path="/apply" element={<ApplyPage />} />
+    <Provider store={store}>
+      <>
+        <Header />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" index element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/teachers" element={<TeachersPage />} />
+            <Route path="/apply" element={<ApplyPage />} />
 
-          <Route path="/courses" element={<CoursesPage />} />
-          <Route path="/courses/:courseId" element={<SingleCourse />} />
-          
-        </Routes>
-      </main>
-      <Footer />
-    </>)
+            <Route path="/courses" element={<CoursesPage />} />
+            <Route path="/courses/:courseId" element={<SingleCourse />} />
+
+          </Routes>
+        </main>
+        <Footer />
+      </>
+    </Provider>)
 }
 export default App;

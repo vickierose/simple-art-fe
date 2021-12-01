@@ -1,17 +1,17 @@
 import React from 'react'
 import { useParams } from 'react-router'
+import { useSelector } from 'react-redux'
 
 import './styles.scss'
 
 import Button from '../../../commonComponents/Button/Button'
 import Single_img from '../../../assets/images/single_course.png'
 
-import { courseData } from '../../../assets/courseData'
 
-//*TODO add redux
 function SingleCourse() {
     const { courseId } = useParams();
-    const singleCourse = courseData.find(el => el.id === courseId);
+    const data = useSelector(state => state.courses);
+    const singleCourse = data.courses.find(el => el.id === courseId);
     return (
         <>
             <section className="content">
