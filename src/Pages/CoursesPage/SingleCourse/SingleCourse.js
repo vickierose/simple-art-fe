@@ -24,8 +24,11 @@ function SingleCourse() {
                         </section>
                         <section className="card-info">
                             <p className="general_subtext_light duration-center">Duration</p>
-                            <p className="general_subtext_light"><span>{singleCourse.duration}</span>
-                                <br /> <span>{singleCourse.periodicity}</span></p>
+                            <p className="general_subtext_light">
+                                <span>{singleCourse.duration}</span>
+                                <br />
+                                <span>{singleCourse.periodicity}</span>
+                            </p>
                         </section>
                     </section>
                     <p className="header_h5_medium">You will learn:</p>

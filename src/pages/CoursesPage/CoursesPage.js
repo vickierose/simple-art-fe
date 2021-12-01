@@ -17,7 +17,7 @@ function CoursesPage() {
 
             <section className="all-cards">
                 {courseData.map((el) => {
-                    return <section key={el.id} className="card">
+                    return <section key={el.id} className="card" onClick={() => navigate(`/courses/${el.id}`)}>
                         <div><img className="course-image" src={Course_img} alt="course_picture" /></div>
                         <section className="card-content">
                             <section className="card-title">
@@ -34,7 +34,8 @@ function CoursesPage() {
                                     <p className="general_subtext_light">
                                         <span>{el.duration}</span>
                                         <br />
-                                        <span>{el.periodicity}</span></p>
+                                        <span>{el.periodicity}</span>
+                                    </p>
                                 </section>
                             </section>
                             <section className="card-text text-height">

@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom"
 
 import './App.scss'
 
-//componets
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer"
 
@@ -24,7 +23,6 @@ function App() {
         <Routes>
           <Route path="/" index element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/courses" element={<CoursesPage />} />
           <Route path="/teachers" element={<TeachersPage />} />
           <Route path="/apply" element={<ApplyPage />} />
 
