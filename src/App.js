@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Route, Routes } from "react-router-dom"
 import { Provider } from 'react-redux'
 import store from './redux/store'
+
+import { useDispatch, useSelector } from 'react-redux'
+
+import getCoursesAction from './redux/actions/coursesAction'
 
 import './App.scss'
 
@@ -18,8 +22,14 @@ import {
 } from "./pages"
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getCoursesAction());
+  }, [dispatch])
+
   return (
-    <Provider store={store}>
+    
       <>
         <Header />
         <main className="main-content">
@@ -36,6 +46,6 @@ function App() {
         </main>
         <Footer />
       </>
-    </Provider>)
+  )
 }
 export default App;

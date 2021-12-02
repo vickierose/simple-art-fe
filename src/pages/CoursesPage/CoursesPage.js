@@ -10,12 +10,12 @@ import getCoursesAction from '../../redux/actions/coursesAction'
 
 function CoursesPage() {
     let navigate = useNavigate();
-    const dispatch = useDispatch();
+    //const dispatch = useDispatch();
     const data = useSelector(state => state.courses);
 
-    useEffect(() => {
-        dispatch(getCoursesAction());
-    }, [dispatch])
+    // useEffect(() => {
+    //     dispatch(getCoursesAction());
+    // }, [dispatch])
 
     return (
         <>
