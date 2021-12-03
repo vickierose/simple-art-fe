@@ -11,4 +11,11 @@ const getCoursesAction = () => dispatch => {
     }));
 }
 
-export default getCoursesAction;
+const setSelectedCourses = (course) => dispatch => {
+    return dispatch({
+        type: courses.SELECTED_COURSE,
+        payload: course
+    });
+} 
+
+export { getCoursesAction, setSelectedCourses };

@@ -8,9 +8,7 @@ import './TeachersPage.scss'
 function TeachersPage({ teacherData, fetchTeachers }) {
     useEffect(() => {
         fetchTeachers()
-    }, []);
-
-    console.log(teacherData.teachers)
+    }, [fetchTeachers]);
 
     return (
         <section className="teachersPage-wrap">

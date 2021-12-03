@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom"
 
 import { useDispatch } from 'react-redux'
 
-import getCoursesAction from './redux/actions/coursesAction'
+import { getCoursesAction } from './redux/actions/coursesAction'
 
 import './App.scss'
 

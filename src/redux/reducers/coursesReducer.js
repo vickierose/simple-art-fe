@@ -29,6 +29,12 @@ const coursesReducer = (state = initialState, action) => {
                 error: payload
             }
 
+        case courses.SELECTED_COURSE:
+            return {
+                ...state,
+                selectedCourse: payload
+            }
+
         default: return state
     }
 }
