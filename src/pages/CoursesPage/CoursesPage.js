@@ -1,21 +1,14 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useNavigate } from 'react-router'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 
-import Course_img from '../../assets/images/course_img.png'
 import Button from '../../commonComponents/Button/Button'
 
 import './styles.scss'
-import getCoursesAction from '../../redux/actions/coursesAction'
 
 function CoursesPage() {
     let navigate = useNavigate();
-    //const dispatch = useDispatch();
     const data = useSelector(state => state.courses);
-
-    // useEffect(() => {
-    //     dispatch(getCoursesAction());
-    // }, [dispatch])
 
     return (
         <>
@@ -24,7 +17,7 @@ function CoursesPage() {
             <section className="all-cards">
                 {data && data.courses.map((el) => {
                     return <section key={el.id} className="card" onClick={() => navigate(`/courses/${el.id}`)}>
-                        <div><img className="course-image" src={Course_img} alt="course_picture" /></div>
+                        <div><img className="course-image" src={el.thumbnail_img_url} alt="course_picture" /></div>
                         <section className="card-content">
                             <section className="card-title">
                                 <h4 className="header_h4_semibold">{el.name}</h4>

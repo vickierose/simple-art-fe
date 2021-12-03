@@ -5,8 +5,6 @@ import { useSelector } from 'react-redux'
 import './styles.scss'
 
 import Button from '../../../commonComponents/Button/Button'
-import Single_img from '../../../assets/images/single_course.png'
-
 
 function SingleCourse() {
     const { courseId } = useParams();
@@ -45,7 +43,7 @@ function SingleCourse() {
                 {/* TODO add passing data to applyPage */}
                 <Button name='Apply now' classN='apply-btn' />
             </section>
-            <div className="right"><img className="image" src={Single_img} alt="course-pic" /></div>
+            <div className="right"><img className="image" src={singleCourse?.full_img_url} alt="course-pic" /></div>
         </section>
             : <h1>loading...</h1>}
 

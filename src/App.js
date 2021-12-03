@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 import { Route, Routes } from "react-router-dom"
-import { Provider } from 'react-redux'
-import store from './redux/store'
 
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 import getCoursesAction from './redux/actions/coursesAction'
 
