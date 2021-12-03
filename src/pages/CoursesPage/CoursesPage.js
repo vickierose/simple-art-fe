@@ -25,7 +25,11 @@ function CoursesPage() {
 
             <section className="all-cards">
                 {data && data.courses.map((el) => {
-                    return <section key={el.id} className="card">
+                    return <section key={el.id} className="card" onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        navigate(`/courses/${el.id}`);
+                    }}>
                         <div><img className="course-image" src={el.thumbnail_img_url} alt="course_picture" /></div>
                         <section className="card-content">
                             <section className="card-title">
@@ -49,7 +53,12 @@ function CoursesPage() {
                             <section className="card-text text-height">
                                 <p className="general_subtext_light clip">{el.description_short}</p>
                             </section>
-                            <Button name='Apply' classN="course-apply" onClick={() => applyCourse(el)} />
+                            <Button name='Apply' classN="course-apply" onClick={(e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                applyCourse(el);
+                            }
+                            } />
                         </section>
                     </section>
                 })}

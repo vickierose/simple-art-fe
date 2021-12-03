@@ -53,7 +53,7 @@ function SingleCourse() {
                     <h4 className="header_h4_semibold price-title">Price: </h4>
                     <p className="header_h4_semibold price">$ {singleCourse?.price}</p>
                 </section>
-                <Button name='Apply now' classN='apply-btn' onClick={() => applyCourse(singleCourse.id)} />
+                <Button name='Apply now' classN='apply-btn' onClick={() => applyCourse(singleCourse)} />
             </section>
             <div className="right"><img className="image" src={singleCourse?.full_img_url} alt="course-pic" /></div>
         </section>
