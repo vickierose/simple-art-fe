@@ -3,7 +3,7 @@ import './modalSubscribe.scss';
 import Close_button from '../assets/img/close_button.png';
 import Modal_img from '../assets/img/modal-img.png';
 import Button from '../commonComponents/Button/Button'
-import postRequest from "../additionalHelpers/POSTrequest";
+import postRequest from "../services/subscribeRequest";
 
 const ModalSubscribe = ({ visible, setVisible }) => {
     if (visible) {

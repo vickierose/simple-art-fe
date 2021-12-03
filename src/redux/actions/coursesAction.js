@@ -1,4 +1,4 @@
-import coursesRequests from "../services/coursesRequests";
+import coursesRequests from "../../services/coursesRequests";
 import courses from "../types/coursesTypes";
 
 const getCoursesAction = () => dispatch => {
