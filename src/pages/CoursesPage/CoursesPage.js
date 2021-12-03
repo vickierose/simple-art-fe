@@ -1,24 +1,36 @@
 import React from 'react'
 import { useNavigate } from 'react-router'
+import { useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
-import Course_img from '../../assets/images/course_img.png'
 import Button from '../../commonComponents/Button/Button'
 
-import { courseData } from '../../assets/courseData'
-
 import './styles.scss'
+import { setSelectedCourses } from '../../redux/actions/coursesAction'
 
 function CoursesPage() {
     let navigate = useNavigate();
+    const data = useSelector(state => state.courses);
+
+    const dispatch = useDispatch();
+
+    function applyCourse(el) {
+        dispatch(setSelectedCourses(el));
+        navigate(`/apply`);
+    }
 
     return (
         <>
             <h1 className="header_h1_bold">Pick your perfect course!</h1>
 
             <section className="all-cards">
-                {courseData.map((el) => {
-                    return <section key={el.id} className="card">
-                        <div><img className="course-image" src={Course_img} alt="course_picture" /></div>
+                {data && data.courses.map((el) => {
+                    return <section key={el.id} className="card" onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        navigate(`/courses/${el.id}`);
+                    }}>
+                        <div><img className="course-image" src={el.thumbnail_img_url} alt="course_picture" /></div>
                         <section className="card-content">
                             <section className="card-title">
                                 <h4 className="header_h4_semibold">{el.name}</h4>
@@ -41,7 +53,12 @@ function CoursesPage() {
                             <section className="card-text text-height">
                                 <p className="general_subtext_light clip">{el.description_short}</p>
                             </section>
-                            <Button name='Apply' classN="course-apply" onClick={() => navigate(`/courses/${el.id}`)} />
+                            <Button name='Apply' classN="course-apply" onClick={(e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                applyCourse(el);
+                            }
+                            } />
                         </section>
                     </section>
                 })}

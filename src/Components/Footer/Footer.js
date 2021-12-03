@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Footer.scss';
 export default function Footer() {
     return (
@@ -6,9 +7,9 @@ export default function Footer() {
             <section className='footer_simple-art__text general_subtext'>Ⓒ Simple Art, 2021<br/>
             All rights reserved</section>   
             <section className='footer_nav'>
-                <a href='#' className='footer_link general_subtext'>Terms</a>
-                <a href='#' className='footer_link general_subtext'>Privacy policy</a>
-                <a href='#' className='footer_link general_subtext'>Help&Support</a>
+                <Link to='/' className='footer_link general_subtext'>Terms</Link>
+                <Link to='/' className='footer_link general_subtext'>Privacy policy</Link>
+                <Link to='/' className='footer_link general_subtext'>Help&Support</Link>
             </section>
         </footer>
     );
