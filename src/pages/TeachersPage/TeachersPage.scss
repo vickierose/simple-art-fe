@@ -1,0 +1,43 @@
+.teacherBlock{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 316px;
+    height: 488px;
+    padding: 12px;
+    box-shadow: 0px 0px 4px 0px #93A3A3;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__name {
+        margin-top: 11px;
+        margin-bottom: 7px;
+    }
+    &__photo{
+        width: 152px;
+        height: 152px;
+        border-radius: 100px;
+        margin-top: 4px;
+    }
+    &__info_block{
+        display: flex;
+        margin-top: 5px;
+        &__blockTitle{
+            width: 100px;
+            padding-right: 16px;
+            color: #4F5D5D;
+        }
+        &__blockInfo{
+            width: 200px;
+        }
+    }
+}
+
+.teachersPage-wrap{
+    padding: 36px 135px 12px 135px;
+    .teachersList{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
