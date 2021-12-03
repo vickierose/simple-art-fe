@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+
 import { Route, Routes } from "react-router-dom"
 
 import { useDispatch } from 'react-redux'
@@ -27,23 +28,22 @@ function App() {
   }, [dispatch])
 
   return (
-    
-      <>
-        <Header />
-        <main className="main-content">
-          <Routes>
-            <Route path="/" index element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/teachers" element={<TeachersPage />} />
-            <Route path="/apply" element={<ApplyPage />} />
+    <>
+      <Header />
+      <main className="main-content">
+        <Routes>
+          <Route path="/" index element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/teachers" element={<TeachersPage />} />
+          <Route path="/apply" element={<ApplyPage />} />
 
-            <Route path="/courses" element={<CoursesPage />} />
-            <Route path="/courses/:courseId" element={<SingleCourse />} />
+          <Route path="/courses" element={<CoursesPage />} />
+          <Route path="/courses/:courseId" element={<SingleCourse />} />
 
-          </Routes>
-        </main>
-        <Footer />
-      </>
+        </Routes>
+      </main>
+      <Footer />
+    </>
   )
 }
 export default App;
